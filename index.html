@@ -6,6 +6,19 @@
         
     <title>Weather App</title>
     
+        <!-- For iOS 
+        * optionally set status bar style
+    -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="$sitename">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+
+    <!-- For Android 
+        * optinally set theme color    
+    -->
+    <meta name="theme-color" content="black">
+    
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -13,7 +26,6 @@
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="css/normalize.css">   
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -21,6 +33,39 @@
     
     <h1>Weather App</h1>
     
+    <!-- Sidebar/Drawer -->
+<aside class="">
+
+  <ul>
+    <li><a href="#one" id="city-1">Link 1</a></li>
+    <li><a href="#two" id="city-2">Link 2</a></li>
+    <li><a href="#three" id="city-3">Geolocation</a></li>
+  </ul>
+  
+  <a class="toggle-drawer">&#x2715;</a>
+  
+</aside>
+
+<!-- Section 1 (Homescreen) -->
+<section id="one">
+  <a class="toggle-drawer">&#9776;</a>
+  <p class="city">City</p>
+  <p><span class="temp">00</span>&#x2109;</p>
+</section>
+
+<!-- Section 2 -->
+<section id="two">
+  <a class="toggle-drawer">&#9776;</a>
+  <p class="city">City</p>
+  <p><span class="temp">00</span>&#x2109;</p>
+</section>
+
+<!-- Section 3 -->
+<section id="three">
+  <a class="toggle-drawer">&#9776;</a>
+  <p class="city">City</p>
+  <p><span class="temp">00</span>&#x2109;</p>
+</section>
     
     
     <!-- Scripts -->
