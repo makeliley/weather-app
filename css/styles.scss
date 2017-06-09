@@ -1,5 +1,10 @@
 body {
-    background: #c0ffee;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Capriola', sans-serif;
 }
 
 
@@ -28,18 +33,20 @@ section {
   position: absolute;
   height: 100%;
   width: 100%;
+  text-decoration: none;
+
 }
 // Section 1
 #one {
-  background: red;
+  background: lightpink;
 }
 // Section 2
 #two {
-  background: green;
+  background: salmon;
 }
 // Section 3
 #three {
-  background: blue;
+  background: lightblue;
 }
 // :target Selection from Sidebar
 :target {
