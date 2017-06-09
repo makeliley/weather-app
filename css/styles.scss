@@ -56,3 +56,18 @@ section {
 :target {
   z-index: 1;
 }
+
+/* -------- MEDIA QUERIES -------- */
+@media (max-width:500px) {
+  body {
+    width: 90%;} 
+  p{
+    font-size: em;}
+  h1 {
+    font-size: 1.5em;}
+  h3 {
+    font-size: 2em;}
+  #theogwiz {
+    width: 90%;
+}
+}
