@@ -1,6 +1,7 @@
 body {
   background: white;
-  font-family: 'Poppins', sans-serif;}
+  font-family: 'Poppins', sans-serif;
+  color: #606060;}
 
 h1 {
   font-family: 'Capriola', sans-serif;
@@ -8,6 +9,10 @@ h1 {
 
 a {
   text-decoration: none;}
+
+#theogwiz {
+    width: 50%;
+}
 
 /* SIDR */
 // Drawer
@@ -37,15 +42,15 @@ section {
 }
 // Section 1
 #one {
-  background: lightpink;
+  background: #dad31b;
 }
 // Section 2
 #two {
-  background: salmon;
+  background: #fcc2c2;
 }
 // Section 3
 #three {
-  background: lightblue;
+  background: #b7d2d5;
 }
 // :target Selection from Sidebar
 :target {
