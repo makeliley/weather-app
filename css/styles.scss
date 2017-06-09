@@ -5,13 +5,28 @@ body {
 
 h1 {
   font-family: 'Capriola', sans-serif;
-}
+  text-align: center;}
 
-a {
-  text-decoration: none;}
+h1, h3 {
+  text-align: center;}
+
+
+/* LINK STYLIN */
+a:link {
+  text-decoration: none;
+  color: #a76fa4;}
+a:visited {
+    color: #a76fa4;}
+a:hover {
+    color: #b58ab3;}
+a:active {
+    color: #c79bc5;}
 
 #theogwiz {
     width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 /* SIDR */
@@ -26,48 +41,40 @@ aside {
   // always on top
   z-index: 999999;
   // animate
-  transition: left .25s;
-}
+  transition: left .25s;}
 
 // Show Drawer
 .drawer {
-  left: 0;
-}
+  left: 0;}
 
 // All Sections
 section {
   position: absolute;
   height: 100%;
-  width: 100%;
-}
+  width: 100%;}
 // Section 1
 #one {
-  background: #dad31b;
-}
+  background: #dad31b;}
 // Section 2
 #two {
-  background: #fcc2c2;
-}
+  background: #fcc2c2;}
 // Section 3
 #three {
-  background: #b7d2d5;
-}
+  background: #b7d2d5;}
 // :target Selection from Sidebar
 :target {
-  z-index: 1;
-}
+  z-index: 1;}
 
 /* -------- MEDIA QUERIES -------- */
 @media (max-width:500px) {
   body {
     width: 90%;} 
-  p{
-    font-size: em;}
+  p {
+    font-size: 1em;}
   h1 {
-    font-size: 1.5em;}
+    font-size: 3em;}
   h3 {
-    font-size: 2em;}
+    font-size: 1.3em;}
   #theogwiz {
-    width: 90%;
-}
+    width: 100%;}
 }

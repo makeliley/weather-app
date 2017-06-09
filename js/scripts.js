@@ -7,11 +7,11 @@ $('.toggle-drawer').click( function() {
   
 });
 
-// Section 1 Weather
+// Section 1 Weather SPOKANE
 $('#city-1').on('click', function() {
   
   $.simpleWeather({
-    location: 99004,
+    location: 'Spokane',
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -24,17 +24,17 @@ $('#city-1').on('click', function() {
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Look outside.');
+      console.log('Oh no!! A-uh-dementor just attacked me!');
     }
   }); 
 });
 
 
-// Section 2 Weather
+// Section 2 Weather BOTHELL
 $('#city-2').on('click', function() {
   
   $.simpleWeather({
-    location: 98105,
+    location: 98011,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -47,7 +47,7 @@ $('#city-2').on('click', function() {
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Go look outside, silly.');
+      console.log('Whoops, my..... wand broke?');
     }
   
   }); 
@@ -85,12 +85,11 @@ $('#city-3').on('click', function() {
       // Display Data
       $('#three .temp').text(weather.temp);
       $('#three .city').text(weather.city);
-        
 
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Look Outside.');
+      console.log('M');
     }
   
   });
