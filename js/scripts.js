@@ -47,7 +47,7 @@ $('#city-2').on('click', function() {
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Look outside.');
+      console.log('Go look outside, silly.');
     }
   
   }); 
@@ -98,3 +98,25 @@ $('#city-3').on('click', function() {
 };
   
 });
+
+
+// Greeting Generator
+// Behavioral
+// Random Number Generator `~` '-'
+var maxRand = 6;
+var randNum = Math.floor(Math.random()*maxRand);
+console.log(randNum);
+
+var greeting0 = 'aloha!'
+var greeting1 = 'howdy!';
+var greeting2 = 'konnichiwa!';
+var greeting3 = 'what happens to be hanging?';
+var greeting4 = 'namaste';
+var greeting5 = 'salaam!';
+
+
+// Concatenate Strings
+//console.log('hi howdy' + ' ' + 'hey neighborito')
+
+// Change Greeting
+$('h3 span').text( eval('greeting' + randNum) );

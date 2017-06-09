@@ -1,12 +1,13 @@
 body {
-    background: white;
-    font-family: 'Poppins', sans-serif;
-}
+  background: white;
+  font-family: 'Poppins', sans-serif;}
 
 h1 {
-    font-family: 'Capriola', sans-serif;
+  font-family: 'Capriola', sans-serif;
 }
 
+a {
+  text-decoration: none;}
 
 /* SIDR */
 // Drawer
@@ -33,8 +34,6 @@ section {
   position: absolute;
   height: 100%;
   width: 100%;
-  text-decoration: none;
-
 }
 // Section 1
 #one {
