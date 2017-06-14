@@ -1,12 +1,15 @@
+// Imports
+@import "normalize";
+
 body {
   background: white;
   font-family: 'Poppins', sans-serif;
-  color: #606060;}
+  color: #606060;
+  width: 90%;
+  margin: 0 auto;}
 
 h1 {
-  font-family: 'Capriola', sans-serif;
-  text-align: center;}
-
+  font-family: 'Capriola', sans-serif;}
 h1, h3 {
   text-align: center;}
 
@@ -23,11 +26,10 @@ a:active {
     color: #c79bc5;}
 
 #theogwiz {
-    width: 30vh; /* DOUBLE CHECK THIS???? */
+    width: 30%; /* DOUBLE CHECK THIS???? */
     display: block;
     margin: 0 auto;
-    padding-bottom: 10px;
-}
+    padding-bottom: 10px;}
 
 /* SIDR */
 // Drawer

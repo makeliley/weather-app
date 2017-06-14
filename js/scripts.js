@@ -110,8 +110,8 @@ var greeting0 = 'aloha!'
 var greeting1 = 'howdy!';
 var greeting2 = 'konnichiwa!';
 var greeting3 = 'what happens to be hanging?';
-var greeting4 = 'namaste';
-var greeting5 = 'salaam!';
+var greeting4 = 'namaste!';
+var greeting5 = 'heidely-ho, neighborino!';
 
 
 // Concatenate Strings
