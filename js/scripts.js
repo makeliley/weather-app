@@ -49,11 +49,8 @@ $('#city-2').on('click', function() {
       // Show if weather cannot be retreived
       console.log('Whoops, my..... wand broke?');
     }
-  
   }); 
-  
 });
-
 
 
 // Section 3 Weather
@@ -91,11 +88,8 @@ $('#city-3').on('click', function() {
       // Show if weather cannot be retreived
       console.log('M');
     }
-  
   });
-    
 };
-  
 });
 
 
