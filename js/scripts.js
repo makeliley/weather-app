@@ -1,60 +1,18 @@
 // Scripts
 
-// Toggle, Show/Hide Drawer
-$('.toggle-drawer').click( function() {
+// Get and store Geo Location lat/long coordinates
+navigator.geolocation.getCurrentPosition( 
   
-  $('aside').toggleClass('drawer');
+  function(position) {
   
+  // wait a few seconds to receive location
+  var lat = position.coords.latitude;
+  var long = position.coords.longitude;
+  
+  console.log( lat, long); 
 });
 
-// Section 1 Weather SPOKANE
 $('#city-1').on('click', function() {
-  
-  $.simpleWeather({
-    location: 'Spokane',
-    unit: 'f',
-    success: function(weather) {
-      // Entire weather object
-      console.log(weather);
-      
-      // Display Data
-      $('#one .temp').text(weather.temp);
-      $('#one .city').text(weather.city);
-      
-    },
-    error: function(error) {
-      // Show if weather cannot be retreived
-      console.log('Oh no!! A-uh-dementor just attacked me!');
-    }
-  }); 
-});
-
-
-// Section 2 Weather BOTHELL
-$('#city-2').on('click', function() {
-  
-  $.simpleWeather({
-    location: 98011,
-    unit: 'f',
-    success: function(weather) {
-      // Entire weather object
-      console.log(weather);
-      
-      // Display Data
-      $('#two .temp').text(weather.temp);
-      $('#two .city').text(weather.city);
-      
-    },
-    error: function(error) {
-      // Show if weather cannot be retreived
-      console.log('Whoops, my..... wand broke?');
-    }
-  }); 
-});
-
-
-// Section 3 Weather
-$('#city-3').on('click', function() {
      
     //load weather using your lat/long coordinates
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -82,16 +40,20 @@ $('#city-3').on('click', function() {
       // Display Data
       $('#three .temp').text(weather.temp);
       $('#three .city').text(weather.city);
-
+      $('#three .currently').text(weather.currently);
+          var iconCode = 'icon-' + weather.code;
+      $('i').attr('class', iconCode );
+      
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('M');
+      console.log('Oops! My wand broke.');
     }
+  
   });
+    
 };
-});
-
+    
 
 // Greeting Generator
 // Behavioral
